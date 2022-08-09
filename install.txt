@@ -1,0 +1,30 @@
+wget -qO- https://repos.influxdata.com/influxdb.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdb.gpg > /dev/null
+export DISTRIB_ID=$(lsb_release -si); export DISTRIB_CODENAME=$(lsb_release -sc)
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/influxdb.gpg] https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list > /dev/null
+
+sudo apt-get update && sudo apt-get install influxdb2
+
+sudo service influxdb start
+
+sudo service influxdb status
+
+192.168.1.106:8086
+
+// Influxdb c++ client
+git clone https://github.com/offa/influxdb-cxx
+mkdir build
+cd build
+cmake -D INFLUXCXX_TESTING:BOOL=OFF ..     
+sudo apt update && sudo apt upgrade && sudo apt install curl && sudo apt-get install libcurl4-openssl-dev
+
+sudo apt-cache search libboost
+sudo apt-get install libboost1.74-*
+
+export INFLUX_USERNAME=paul
+export INFLUX_PASSWORD=5kx8-O\DAIjp
+
+influx config create --config-name <config-name> \
+  --host-url http://localhost:8086 \
+  --org 4bafd5ec6897fa1c \
+  --token <your-auth-token> \
+  --active

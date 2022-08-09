@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{1ba04e09-055a-4296-90dc-8f208c91e213}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{824fb96c-4c77-476b-bb51-01969c4fc87c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{11d20c8e-8f89-424a-a36e-6bfe7abd4c3a}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{d6667d3d-29c0-4ca8-956e-24b6298cfd80}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ModbusClient.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="wiringSerial.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="RS485Serial.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusMaster485.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="GroWattClass.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartEnergy.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadP1.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="configfile.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="configoption.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="strlib.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModbusClient-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="ModbusClient-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wiringSerial.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="RS485Serial.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusMaster485.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="GroWattClass.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartEnergy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="influxdb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadP1.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="configfile.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="configoption.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="strlib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
